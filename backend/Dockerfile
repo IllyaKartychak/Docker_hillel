@@ -18,4 +18,4 @@ COPY /app /app
 
 EXPOSE 20001
 
-CMD ["uv", "run", "-m", "main:app", "100"]
+CMD ["uv", "run", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "20001"]
